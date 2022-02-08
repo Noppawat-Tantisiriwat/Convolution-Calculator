@@ -7,7 +7,7 @@ class Stack:
         self.functions = function_list
         self.name = name
 
-    def calculate(self, input_shape):
+    def forward(self, input_shape):
 
         x = input_shape
 
@@ -20,4 +20,3 @@ class Stack:
 
         return self.name + "\n ____________ " + "layers : " + str(len(self.functions)) 
 
-        
