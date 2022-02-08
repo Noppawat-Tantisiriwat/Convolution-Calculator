@@ -15,7 +15,7 @@ def conv2d_out(input_shape: List[int], kernel_size: List[int], padding: List[int
 
     return [output_hight, output_width]
 
-def conv3_out(input_shape: List[int], kernel_size: List[int], padding: List[int], stride: List[int], dialation: List[int]):
+def conv3d_out(input_shape: List[int], kernel_size: List[int], padding: List[int], stride: List[int], dialation: List[int]):
 
     output_depth = np.floor(((input_shape[0] + 2*padding[0] - dialation[0] * (kernel_size[0] - 1) - 1) / stride[0]) + 1)
 
